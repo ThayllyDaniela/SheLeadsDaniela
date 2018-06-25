@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Bootstrap import-->
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+        <!--Phaser engine file-->
+        <script src="phaser/phaser.min.js"></script>
+        <script src="phaser/CanvasInput.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="main.css">
+        <!--Must call each state-->
+        <script src="state1.js"></script>
+        <script src="state4.js"></script>
+
+        <!-- DataBase-->
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAWu7Y2z3moF8Wo081MnhSFKmhUemQE7UQ",
+                authDomain: "login-d9454.firebaseapp.com",
+                databaseURL: "https://login-d9454.firebaseio.com",
+                projectId: "login-d9454",
+                storageBucket: "login-d9454.appspot.com",
+                messagingSenderId: "258235232899"
+                };
+            firebase.initializeApp(config);
+        </script>
+    </head>
+
+    <body>
+      <div id="modals" class="modals">
+        <div id="modal_content" class="modal_content">
+          <p>When you think of STEM, what female comes to your mind?</p>
+          <input id="question6_1" class="question6_1">
+          <button id="close" class="close">Enter</button>
+        </div>
+      </div>
+      <div id="modals2" class="modals2">
+        <div id="modal_content" class="modal_content">
+          <p>Name a personality trait that is important for female leaders to have.</p>
+          <input id="question6_2" class="question6_2">
+          <button id="close2" class="close2">Enter</button>
+        </div>
+      </div>
+      
+      
+      <div id="firstNameModal" class="firstNameModal">
+          
+        
+            <div class="jumbotron">
+                <h2 class=new-font><center>HELLO!</center></h2>
+			        <h2><center>My name is</center></h2>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form>
+                            <div class="col-xs-12 no-right-padding">
+                                <label for="formGroupExampleInput">What is your first name?</label>
+                                <input id="firstNameInput" type="text" class="form-control firstNameInput" placeholder="Enter in All Capital Letters" onkeyup="right_characters(this,1)">
+                                
+                            </div>
+                            <div class="col-xs-12">
+                                <label for="formGroupExampleInput2">What is your last name</label>
+                                <input id="lastNameInput" type="text" class="form-control lastNameInput"  placeholder="Enter in All Capital Letters" onkeyup="right_characters(this,1)">
+                            </div>
+                            <div id="" class="col-xs-12 no-left-padding">
+                				<center><button id= "close3" type="button" class="btn close3 btn-warning signin">Sign in</button></center>
+                			</div>
+                        </form>
+                        
+                        <!--<p>What is your Last Name? (Enter in All Capital Letters)</p>-->
+            <!--<input id="lastNameInput" class="lastNameInput" onkeyup="right_characters(this,1)">-->
+            <!--<button id="close3" class="close3">Enter</button>-->
+                        
+                    </div>
+                </div>
+            </div>
+         
+
+
+          
+          
+        
+          
+            <!--<p>What is your First Name? (Enter in All Capital Letters)</p>
+            <input id="firstNameInput" class="firstNameInput" onkeyup="right_characters(this,1)">
+          -->
+          
+            
+          
+       
+      </div>
+      <script id = "game1" src="main.js"></script>
+    </body>
+</html>

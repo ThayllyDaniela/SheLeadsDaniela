@@ -30,14 +30,15 @@ html, body, #phaser-game {
 }
 
 .jumbotron{
-    position: fixed;
+    position: absolute;
     padding-top: 10px;
     background-color:#791B50;
     color:white;
     /*width: 40em;*/
     font-family: Champagne;
     width: 30%;
-   height: 50vh;
+   /*height: 50vh*/;
+   
    
 }       
 
@@ -47,23 +48,13 @@ html, body, #phaser-game {
   width: 85%;
   height: 3%;
 }
-.firstNameInput
-{
-  position: relative;
-  width: 85%;
-  height: 20px;
-}
+
 .last
 {
   position: relative;
   top: 25px;
 }
-.lastNameInput
-{
-  position: relative;
-  width: 85%;
-  height: 20px;
-}
+
 .modals
 {
     display: none; /* Hidden by default */
@@ -100,7 +91,8 @@ html, body, #phaser-game {
     justify-content: center;
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 10px; /* Location of the box */
+    padding-bottom:10px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -143,14 +135,14 @@ html, body, #phaser-game {
     font-size: 80%;
     font-weight: bold;
 }
-.close3 {
+/*.close3 {
     width: 10%;
     height: 20%;
     color: #aaaaaa;
     float: right;
     font-size: 80%;
     font-weight: bold;
-}
+}*/
 
 .close:hover,
 .close:focus {
