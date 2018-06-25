@@ -1,0 +1,165 @@
+/*Makes game have no margin*/
+*{
+    margin: 0;
+}
+
+html, body, #phaser-game {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Champagne';
+    src: url('fonts/Champagne&Limousines.ttf');
+    
+}
+
+.question6_1
+{
+  position: relative;
+  width: 85%;
+  height: 3%;
+}
+
+.jumbotron{
+    position: fixed;
+    padding-top: 10px;
+    background-color:#791B50;
+    color:white;
+    /*width: 40em;*/
+    font-family: Champagne;
+    width: 30%;
+   height: 50vh;
+   
+}       
+
+.question6_2
+{
+  position: relative;
+  width: 85%;
+  height: 3%;
+}
+.firstNameInput
+{
+  position: relative;
+  width: 85%;
+  height: 20px;
+}
+.last
+{
+  position: relative;
+  top: 25px;
+}
+.lastNameInput
+{
+  position: relative;
+  width: 85%;
+  height: 20px;
+}
+.modals
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0);
+}
+.modals2
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0);
+}
+.firstNameModal
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0);
+}
+
+.modal_content
+{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.modal_content2
+{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 15%;
+}
+.close {
+    width: 10%;
+    height: 3%;
+    color: #aaaaaa;
+    float: right;
+    font-size: 80%;
+    font-weight: bold;
+}
+.close2 {
+    width: 10%;
+    height: 3%;
+    color: #aaaaaa;
+    float: right;
+    font-size: 80%;
+    font-weight: bold;
+}
+.close3 {
+    width: 10%;
+    height: 20%;
+    color: #aaaaaa;
+    float: right;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#game1
+{
+  z-index: 10;
+}
